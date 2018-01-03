@@ -24,8 +24,9 @@ casks=(
   dotnet-sdk
   powershell
   garmin-express
-  microsoft-office
+  #microsoft-office
   paralells
+  psequel
 )
 
 pips=(
@@ -54,23 +55,6 @@ git_configs=(
 
   "core.editor nano"
 
-  "color.branch auto"
-  "color.diff auto"
-  "color.status auto"
-  
-  "color.branch.current yellow reverse"
-  "color.branch.local yellow"
-  "color.branch.remote green"
-
-  "color.diff.meta yellow bold"
-  "color.diff.frag magenta bold"
-  "color.diff.old red bold"
-  "color.diff.new green bold"
-
-  "color.status.added yellow"
-  "color.status.changed green"
-  "color.status.untracked cyan"
-
 )
 
 vscode=(
@@ -84,7 +68,8 @@ set +e
 set -x
 
 function prompt {
-  read -p "Hit Enter to $1 ..."
+  #read -p "Hit Enter to $1 ..."
+  echo "About to $1 ..."
 }
 
 if test ! $(which brew); then
