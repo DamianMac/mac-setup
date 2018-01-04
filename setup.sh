@@ -24,7 +24,7 @@ casks=(
   dotnet-sdk
   powershell
   garmin-express
-  #microsoft-office
+  microsoft-office
   paralells
   psequel
 )
