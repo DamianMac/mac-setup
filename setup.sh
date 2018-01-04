@@ -8,6 +8,7 @@ brews=(
   python3
   mas
   terraform
+  bash-completion
 )
 
 casks=(
