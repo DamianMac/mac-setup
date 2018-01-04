@@ -9,6 +9,7 @@ brews=(
   mas
   terraform
   bash-completion
+  awscli
 )
 
 casks=(
@@ -28,11 +29,6 @@ casks=(
   microsoft-office
   paralells
   psequel
-)
-
-pips=(
-  pip
-  awscli
 )
 
 gems=(
@@ -114,7 +110,6 @@ brew cask info ${casks[@]}
 install 'brew cask install' ${casks[@]}
 
 prompt "Installing secondary packages"
-install 'pip install --upgrade' ${pips[@]}
 install 'gem install' ${gems[@]}
 install 'npm install --global' ${npms[@]}
 install 'code --install-extension' ${vscode[@]}
